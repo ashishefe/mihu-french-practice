@@ -1,0 +1,167 @@
+[
+  {
+    "id": "hotel-and-place-language",
+    "subjectId": "french",
+    "level": 1,
+    "title": "Hotel Hopper",
+    "skill": "Places, signs, and practical exam vocabulary",
+    "whyItMatters": "The paper asks Mihika to identify where to go or what a place is for. She needs quick recognition, not slow translation.",
+    "mnemonic": "Reception receives. Restaurant restores hunger. Garage guards cars.",
+    "source": "Practice Paper II: sign and location recognition",
+    "demo": {
+      "prompt": "Tu peux garer ta voiture ici.",
+      "answer": "Garage.",
+      "explanation": "The clue is the action. Garer means to park, so the matching place is the garage."
+    }
+  },
+  {
+    "id": "present-tense-helpers",
+    "subjectId": "french",
+    "level": 2,
+    "title": "Verb Workshop",
+    "skill": "High-frequency present tense verbs",
+    "whyItMatters": "Mihika sees present tense in gap fills before she converts those same verbs into passé composé.",
+    "mnemonic": "Present tense is the toolbox. Passé composé is the same toolbox with a helper verb attached.",
+    "source": "Practice Paper II: prendre, mettre, remplir, partir, pouvoir",
+    "demo": {
+      "prompt": "Vous ______ quand ? [partir]",
+      "answer": "Vous partez quand ?",
+      "explanation": "With vous in the present tense, partir becomes partez."
+    }
+  },
+  {
+    "id": "passe-compose-core",
+    "subjectId": "french",
+    "level": 3,
+    "title": "Time Travel Lab",
+    "skill": "Passé composé with avoir",
+    "whyItMatters": "Most verbs in the uploaded practice sets use avoir, so Mihika needs this as the default pathway.",
+    "mnemonic": "Avoir is the backpack helper: I carry ai, as, a, avons, avez, ont into the past.",
+    "source": "Worksheet 3 and Practice Paper II",
+    "demo": {
+      "prompt": "Ma mère ______ ses clés. [perdre]",
+      "answer": "Ma mère a perdu ses clés.",
+      "explanation": "Perdre normally takes avoir in the passé composé, so we use a + perdu."
+    }
+  },
+  {
+    "id": "etre-movers",
+    "subjectId": "french",
+    "level": 4,
+    "title": "Elevator of Movement",
+    "skill": "Être verbs and agreement",
+    "whyItMatters": "The worksheets strongly focus on movement and state-change verbs such as aller, arriver, partir, entrer, naître, mourir and rester.",
+    "mnemonic": "If the subject moved or changed state, ask: did it ride the être elevator? Then make the ending agree.",
+    "source": "Worksheet 2 and Worksheet 3",
+    "demo": {
+      "prompt": "Elle ______ au cinéma avec ses amis. [aller]",
+      "answer": "Elle est allée au cinéma avec ses amis.",
+      "explanation": "Aller takes être. Because the subject is feminine singular, the past participle becomes allée."
+    }
+  },
+  {
+    "id": "repair-station",
+    "subjectId": "french",
+    "level": 5,
+    "title": "Grammar Repair Station",
+    "skill": "Correcting wrong passé composé forms",
+    "whyItMatters": "The correction worksheet trains Mihika to notice whether the helper verb, participle, and agreement are all correct.",
+    "mnemonic": "Repair in three taps: helper, participle, agreement.",
+    "source": "Worksheet 3: Corrigez les phrases",
+    "demo": {
+      "prompt": "Nous avons allé au parc.",
+      "answer": "Nous sommes allés au parc.",
+      "explanation": "Aller is an être verb, not an avoir verb. With nous, the participle also takes s: allés."
+    }
+  },
+  {
+    "id": "reading-and-writing",
+    "subjectId": "french",
+    "level": 6,
+    "title": "Story Scout",
+    "skill": "Reading comprehension and short guided writing",
+    "whyItMatters": "The paper ends with a reading task and a guided piece titled Ma sortie récente, so Mihika needs both recall and composition confidence.",
+    "mnemonic": "Read for gifts, floors, and reasons. Write with who, where, what, wore, ate.",
+    "source": "Practice Paper II: shopping text and Ma sortie récente",
+    "demo": {
+      "prompt": "Pourquoi M. Lafont fait-il du shopping aujourd'hui ?",
+      "answer": "Parce que c'est Noël ce weekend et il achète pour sa famille.",
+      "explanation": "The reason appears at the start of the passage."
+    }
+  },
+  {
+    "id": "daily-routines",
+    "subjectId": "french",
+    "level": 7,
+    "title": "Morning & Evening",
+    "skill": "Reflexive verbs for daily routines",
+    "whyItMatters": "Tricolore 3C tests reflexive verbs — se laver, se lever, se coucher, s'habiller, se réveiller. These have an extra pronoun that changes with the subject.",
+    "mnemonic": "Reflexive = the action bounces back. Je ME lève, tu TE lèves, il SE lève. The pronoun mirrors the subject.",
+    "source": "Tricolore 2, Unit 3C: La routine",
+    "demo": {
+      "prompt": "Le matin, je ______ à sept heures. [se lever]",
+      "answer": "Je me lève à sept heures.",
+      "explanation": "Se lever with je becomes 'me lève'. The reflexive pronoun me goes before the verb."
+    }
+  },
+  {
+    "id": "reflexive-negative",
+    "subjectId": "french",
+    "level": 8,
+    "title": "Mais Non!",
+    "skill": "Reflexive verbs in negative + vouloir",
+    "whyItMatters": "Tricolore 3D/3E combines two tricky patterns: negating reflexive verbs (ne...pas wraps around the pronoun+verb) and using vouloir + infinitive.",
+    "mnemonic": "NE wraps the reflexive sandwich: je NE me lève PAS. Vouloir wants an infinitive friend: je veux JOUER.",
+    "source": "Tricolore 2, Units 3D-3E: Comment ça se passe / C'est mercredi",
+    "demo": {
+      "prompt": "Write the negative: Elle se baigne.",
+      "answer": "Elle ne se baigne pas.",
+      "explanation": "In the negative, ne goes before the reflexive pronoun (se) and pas goes after the verb (baigne)."
+    }
+  },
+  {
+    "id": "describe-yourself",
+    "subjectId": "french",
+    "level": 9,
+    "title": "C'est Moi!",
+    "skill": "Describing yourself, others, and introductions",
+    "whyItMatters": "Tricolore 4A tests physical descriptions (height, hair, eyes), clothing vocabulary, and greeting/introduction phrases with tu and vous.",
+    "mnemonic": "Height first (je suis grand/petit), then hair (j'ai les cheveux...), then eyes (j'ai les yeux...), then clothes (je porte...).",
+    "source": "Tricolore 2, Unit 4A: Bienvenue en France",
+    "demo": {
+      "prompt": "Describe André: average height, short brown hair, wearing a tracksuit and blue t-shirt.",
+      "answer": "Il est de taille moyenne. Il a les cheveux courts et bruns. Il porte un jogging et un tee-shirt bleu.",
+      "explanation": "Use être for height, avoir for hair/eyes, porter for clothes."
+    }
+  },
+  {
+    "id": "perfect-tense-intro",
+    "subjectId": "french",
+    "level": 10,
+    "title": "Yesterday's News",
+    "skill": "Perfect tense introduction + time expressions",
+    "whyItMatters": "Tricolore 4C introduces passé composé with avoir and teaches time expressions like hier, ce matin, la semaine dernière. This is where Mihika first learns to talk about the past.",
+    "mnemonic": "Two verbs make the past: AVOIR in the present + past participle. Hier j'AI MANGÉ = Yesterday I ate.",
+    "source": "Tricolore 2, Unit 4C: On s'amuse",
+    "demo": {
+      "prompt": "Translate to French: Did you buy something?",
+      "answer": "Tu as acheté quelque chose ?",
+      "explanation": "Passé composé: tu (subject) + as (avoir) + acheté (past participle of acheter)."
+    }
+  },
+  {
+    "id": "perfect-er-verbs",
+    "subjectId": "french",
+    "level": 11,
+    "title": "Party Time!",
+    "skill": "Perfect tense of -er verbs and recent activities",
+    "whyItMatters": "Tricolore 4D drills the -er verb pattern specifically: remove -er, add -é. This covers most common French verbs (manger, jouer, regarder, écouter, danser, acheter, porter).",
+    "mnemonic": "The -er → -é rule: chop the R, add the accent. Manger → mangé. Jouer → joué. Danser → dansé.",
+    "source": "Tricolore 2, Unit 4D: Une fête",
+    "demo": {
+      "prompt": "Complete with the past participle: Nous avons ______ de la pizza. [manger]",
+      "answer": "Nous avons mangé de la pizza.",
+      "explanation": "Manger is an -er verb. Remove -er, add -é: mangé."
+    }
+  }
+]

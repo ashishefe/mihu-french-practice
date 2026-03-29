@@ -1,0 +1,106 @@
+[
+  {
+    "id": "r-default-avoir",
+    "subjectId": "french",
+    "front": "Which helper is the default in the passé composé?",
+    "back": "Avoir is the default helper for most verbs.",
+    "anchor": "Most verbs wear the avoir backpack.",
+    "keywords": ["avoir", "default", "most", "verbs", "helper"]
+  },
+  {
+    "id": "r-etre-movers",
+    "subjectId": "french",
+    "front": "When should you check for être in passé composé?",
+    "back": "Check for movement or state-change verbs such as aller, arriver, entrer, partir, rentrer, tomber, venir, naître, mourir, rester, devenir.",
+    "anchor": "Movement often rides the être elevator.",
+    "keywords": ["movement", "state", "change", "move", "etre", "aller"]
+  },
+  {
+    "id": "r-agreement",
+    "subjectId": "french",
+    "front": "What happens to the past participle after être?",
+    "back": "It agrees with the subject in gender and number: e for feminine, s for plural when needed.",
+    "anchor": "Être asks the ending to match the traveler.",
+    "keywords": ["agree", "match", "gender", "number", "feminine", "plural"]
+  },
+  {
+    "id": "r-repair-check",
+    "subjectId": "french",
+    "front": "What are the three repair checks for a wrong passé composé sentence?",
+    "back": "Helper verb, past participle, agreement.",
+    "anchor": "Repair in three taps.",
+    "keywords": ["helper", "participle", "agreement", "check", "verb"]
+  },
+  {
+    "id": "r-writing-check",
+    "subjectId": "french",
+    "front": "What is the writing checklist for Ma sortie récente?",
+    "back": "Where you went, with whom, what you did there, what you wore, what you ate and whether you liked it.",
+    "anchor": "Who, where, did, wore, ate.",
+    "keywords": ["where", "who", "what", "wore", "ate", "did", "food"]
+  },
+  {
+    "id": "r-avoir-pattern",
+    "subjectId": "french",
+    "front": "What is the standard passé composé pattern with avoir?",
+    "back": "Subject + avoir in the present + past participle.",
+    "anchor": "Backpack helper first, action word second.",
+    "keywords": ["subject", "avoir", "participle", "helper", "past"]
+  },
+  {
+    "id": "r-listening-elimination",
+    "subjectId": "french",
+    "front": "What should you do first in a multiple-choice listening question?",
+    "back": "Scan the options before listening and identify the category differences such as place, drink, clothing, or action.",
+    "anchor": "See the battlefield before the audio starts.",
+    "keywords": ["scan", "look", "options", "before", "listen", "read"]
+  },
+  {
+    "id": "r-reflexive-pronouns",
+    "subjectId": "french",
+    "front": "What are the reflexive pronouns for each subject?",
+    "back": "je→me, tu→te, il/elle/on→se, nous→nous, vous→vous, ils/elles→se. The pronoun goes BEFORE the verb.",
+    "anchor": "The pronoun mirrors the subject, like a reflection.",
+    "keywords": ["me", "te", "se", "nous", "vous", "pronoun", "before"]
+  },
+  {
+    "id": "r-reflexive-negative",
+    "subjectId": "french",
+    "front": "How do you make a reflexive verb negative?",
+    "back": "Put ne BEFORE the reflexive pronoun and pas AFTER the verb: je NE me lève PAS.",
+    "anchor": "NE wraps the reflexive sandwich.",
+    "keywords": ["ne", "pas", "before", "pronoun", "after", "negative"]
+  },
+  {
+    "id": "r-vouloir-pattern",
+    "subjectId": "french",
+    "front": "How does vouloir work with another verb?",
+    "back": "Vouloir + infinitive: je veux jouer, tu veux manger, il veut aller. The second verb stays in the infinitive.",
+    "anchor": "Vouloir wants an infinitive friend.",
+    "keywords": ["vouloir", "infinitive", "veux", "veut", "want"]
+  },
+  {
+    "id": "r-description-order",
+    "subjectId": "french",
+    "front": "What is the order for describing someone in French?",
+    "back": "Height (être: grand/petit/taille moyenne) → Hair (avoir: les cheveux + color + length) → Eyes (avoir: les yeux + color) → Clothes (porter: un jean, une robe...).",
+    "anchor": "Height, hair, eyes, clothes. Être, avoir, avoir, porter.",
+    "keywords": ["height", "hair", "eyes", "clothes", "etre", "avoir", "porter", "describe"]
+  },
+  {
+    "id": "r-er-participle",
+    "subjectId": "french",
+    "front": "How do you form the past participle of -er verbs?",
+    "back": "Remove -er from the infinitive and add -é. Examples: manger→mangé, jouer→joué, danser→dansé, acheter→acheté.",
+    "anchor": "Chop the R, add the accent: -er becomes -é.",
+    "keywords": ["er", "remove", "add", "accent", "mange", "joue", "participle"]
+  },
+  {
+    "id": "r-time-expressions",
+    "subjectId": "french",
+    "front": "What are the key time expressions for talking about the past?",
+    "back": "hier (yesterday), hier matin (yesterday morning), hier soir (last night), la semaine dernière (last week), vendredi dernier (last Friday), le weekend dernier (last weekend).",
+    "anchor": "Hier is your time travel word. Dernier/dernière means 'last'.",
+    "keywords": ["hier", "dernier", "yesterday", "last", "matin", "soir", "time"]
+  }
+]

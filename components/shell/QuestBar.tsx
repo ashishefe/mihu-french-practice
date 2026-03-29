@@ -5,6 +5,7 @@ import { useProgress } from "@/components/providers/ProgressProvider";
 import { useAuth } from "@/components/providers/AuthProvider";
 import { SignInButton } from "@/components/auth/SignInButton";
 import { UserMenu } from "@/components/auth/UserMenu";
+import { ExamCountdown } from "@/components/shared/ExamCountdown";
 
 export function QuestBar() {
   const { progress, masteryPercent } = useProgress();
@@ -20,6 +21,7 @@ export function QuestBar() {
         <span>⭐ {progress.xp} XP</span>
         <span>📊 {masteryPercent}%</span>
       </div>
+      <ExamCountdown />
       <div className="quest-bar-actions">
         <Link href="/help" className="quest-bar-help" aria-label="Help">
           ?

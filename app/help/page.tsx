@@ -239,6 +239,60 @@ export default function HelpPage() {
         </p>
       </section>
 
+      {/* Revision Plan */}
+      <section className="help-section">
+        <div className="help-section-header">
+          <Image
+            src="/attie/happy.webp"
+            alt="Attie with a study plan"
+            width={64}
+            height={64}
+          />
+          <h2>Your revision plan (exam: April 15)</h2>
+        </div>
+        <p>
+          Here&apos;s how I&apos;d spread the revision across the days we have
+          left. The idea: cover each topic at least twice, with the hardest
+          stuff getting more time. Do 20-30 minutes per day — short and focused
+          beats long and tired.
+        </p>
+        <div className="help-revision-grid">
+          <div className="help-revision-day">
+            <strong>Days 1-2: Foundations</strong>
+            <p>Daily Routines (reflexive verbs) + Describe Yourself. These are
+            vocabulary-heavy — get the words locked in early.</p>
+          </div>
+          <div className="help-revision-day">
+            <strong>Days 3-4: Grammar core</strong>
+            <p>Perfect Tense Intro + Perfect -er Verbs. The -er → -&#233;
+            pattern is the backbone of the exam. Drill until it&apos;s
+            automatic.</p>
+          </div>
+          <div className="help-revision-day">
+            <strong>Days 5-6: Tricky stuff</strong>
+            <p>Reflexive Negatives (ne...pas around reflexive verbs) + Elevator
+            of Movement (&#234;tre verbs + agreement). These are where most
+            marks are lost.</p>
+          </div>
+          <div className="help-revision-day">
+            <strong>Days 7-8: Repair + Write</strong>
+            <p>Grammar Repair Station (correction exercises) + Writing Quest
+            (Ma sortie r&#233;cente). Practice spotting and fixing errors, then
+            write a full paragraph.</p>
+          </div>
+          <div className="help-revision-day">
+            <strong>Days 9+: Memory Garden</strong>
+            <p>Review all due memory cards daily. Do a full mixed practice
+            (all stages). Focus on any stage where mastery is below 70%.</p>
+          </div>
+        </div>
+        <p>
+          <strong>Every day:</strong> Start with Memory Garden (5 min), then
+          practice the day&apos;s focus stage (15-20 min), then one quick round
+          of mixed questions (5 min). Done!
+        </p>
+      </section>
+
       {/* Footer */}
       <section className="help-footer">
         <Image

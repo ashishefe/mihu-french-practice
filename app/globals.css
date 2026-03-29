@@ -173,6 +173,37 @@ h1, h2, h3, h4, p {
   white-space: nowrap;
 }
 
+/* ─── Exam Countdown ──────────────────────────────────────── */
+
+.exam-countdown {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.exam-calm {
+  background: var(--success-soft);
+  color: var(--success-text);
+}
+
+.exam-soon {
+  background: var(--warning-soft);
+  color: #92640a;
+}
+
+.exam-urgent {
+  background: var(--danger-soft);
+  color: var(--danger-text);
+}
+
+.exam-today {
+  background: var(--danger);
+  color: var(--text-inverse);
+}
+
 .quest-bar-help {
   display: flex;
   align-items: center;
@@ -1024,6 +1055,31 @@ h1, h2, h3, h4, p {
   color: var(--ink-muted);
   margin: 0.75rem 0 1rem;
   font-size: 1.05rem;
+}
+
+.help-revision-grid {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.75rem 0;
+}
+
+.help-revision-day {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+  border: 1px solid var(--line);
+}
+
+.help-revision-day strong {
+  color: var(--primary);
+  font-size: 0.92rem;
+}
+
+.help-revision-day p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  margin: 0.25rem 0 0;
 }
 
 @media (max-width: 480px) {
