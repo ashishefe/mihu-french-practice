@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Mihika's French Quest",
+  title: "Mihu Learning",
   description:
-    "A Vercel-ready French learning game that turns Mihika's Grade 7 revision materials into spaced, memorable practice."
+    "Mihika's personal learning platform — exam prep that builds real understanding.",
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body>{children}</body>
     </html>
   );
