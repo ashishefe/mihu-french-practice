@@ -86,7 +86,6 @@ export async function POST(req: NextRequest): Promise<NextResponse<GradeResponse
         generationConfig: {
           temperature: 0.1,
           maxOutputTokens: 256,
-          responseMimeType: "application/json",
         },
       }),
     });
@@ -126,9 +125,15 @@ export async function POST(req: NextRequest): Promise<NextResponse<GradeResponse
       );
     }
 
+    // Sanitize feedback — never show raw JSON/markdown to the student
+    let feedback = parsed.feedback ?? "Good effort!";
+    if (feedback.includes("```") || feedback.includes("JSON") || feedback.includes("{")) {
+      feedback = parsed.correct ? "Correct! Well done." : "Not quite — check the expected answer and try again.";
+    }
+
     return NextResponse.json({
       correct: parsed.correct ?? false,
-      feedback: parsed.feedback ?? "Good effort!",
+      feedback,
       accentNote: parsed.accentNote ?? undefined,
       partialCredit: parsed.partialCredit ?? undefined,
     });
