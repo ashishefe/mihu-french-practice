@@ -564,6 +564,16 @@ h1, h2, h3, h4, p {
   padding: 1.15rem;
 }
 
+.stage-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.stage-card-action {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
 .stage-card h3,
 .review-card h3,
 .arena-card h3,
@@ -586,10 +596,6 @@ h1, h2, h3, h4, p {
 .stage-card-selected {
   border-color: var(--primary);
   background: var(--primary-soft);
-}
-
-.stage-card-action {
-  margin-top: 0.75rem;
 }
 
 .memory-box,
