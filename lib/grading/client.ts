@@ -2,6 +2,16 @@ import type { GradeRequest, GradeResponse } from "../types";
 import { sameAnswer } from "../utils";
 import { getCachedGrade, setCachedGrade } from "./cache";
 
+function clientFallback(req: GradeRequest): GradeResponse {
+  const correct = sameAnswer(req.studentAnswer, req.expectedAnswer);
+  return {
+    correct,
+    feedback: correct
+      ? "Correct! (Attie used quick-check mode.)"
+      : `Not quite — the expected answer was: ${req.expectedAnswer}. (Attie used quick-check mode.)`,
+  };
+}
+
 export async function gradeAnswer(
   req: GradeRequest
 ): Promise<GradeResponse> {
@@ -12,7 +22,7 @@ export async function gradeAnswer(
   // 2. Call API with timeout
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
+    const timeout = setTimeout(() => controller.abort(), 10000);
 
     const res = await fetch("/api/grade", {
       method: "POST",
@@ -25,19 +35,29 @@ export async function gradeAnswer(
 
     if (res.ok) {
       const result = (await res.json()) as GradeResponse;
+
+      // Check for fallback signal from server
+      if (result.feedback === "FALLBACK_TO_CLIENT") {
+        return clientFallback(req);
+      }
+
       setCachedGrade(req.questionId, req.studentAnswer, result);
       return result;
     }
+
+    // Non-OK response — check if it's a fallback signal
+    try {
+      const errResult = (await res.json()) as GradeResponse;
+      if (errResult.feedback === "FALLBACK_TO_CLIENT") {
+        return clientFallback(req);
+      }
+    } catch {
+      // couldn't parse error response
+    }
   } catch {
-    // timeout or network error — fall through to fallback
+    // timeout or network error
   }
 
   // 3. Fallback: client-side exact match
-  const correct = sameAnswer(req.studentAnswer, req.expectedAnswer);
-  return {
-    correct,
-    feedback: correct
-      ? "Correct! (Grading was approximate — Attie couldn't reach the server.)"
-      : `Not quite. The expected answer was: ${req.expectedAnswer}. (Approximate grading — Attie couldn't reach the server.)`,
-  };
+  return clientFallback(req);
 }
