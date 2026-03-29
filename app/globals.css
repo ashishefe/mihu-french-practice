@@ -733,6 +733,36 @@ h1, h2, h3, h4, p {
   font-weight: 500;
 }
 
+.accent-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.accent-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--bg);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 100ms ease, border-color 100ms ease;
+}
+
+.accent-btn:hover {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+}
+
+.accent-btn:active {
+  background: var(--primary);
+  color: var(--text-inverse);
+}
+
 .text-answer input {
   border-radius: var(--radius-md);
   border: 2px solid var(--line);

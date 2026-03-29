@@ -66,10 +66,10 @@ export function scoreQuestionResult(
     streak: nextStreak,
     lives: correct
       ? Math.min(5, progress.lives + (earnedLife ? 1 : 0))
-      : Math.max(0, progress.lives - 1),
+      : progress.lives, // wrong answers no longer cost lives
     health: correct
-      ? Math.min(100, progress.health + (firstWin ? 6 : 2))
-      : Math.max(0, progress.health - 12),
+      ? Math.min(100, progress.health + (firstWin ? 8 : 3))
+      : Math.max(0, progress.health - 5),
     xp: progress.xp + (correct ? (firstWin ? 14 : 4) : 3),
   };
 }
@@ -94,9 +94,9 @@ export function scoreReviewResult(
   return {
     ...progress,
     health: success
-      ? Math.min(100, progress.health + 4)
-      : Math.max(0, progress.health - 8),
-    lives: success ? progress.lives : Math.max(0, progress.lives - 1),
+      ? Math.min(100, progress.health + 5)
+      : Math.max(0, progress.health - 3),
+    lives: success ? progress.lives : progress.lives, // reviews don't cost lives
     xp: progress.xp + (success ? 10 : 2),
     review: {
       ...progress.review,
@@ -131,7 +131,7 @@ export function skipQuestion(progress: SubjectProgress): SubjectProgress {
   return {
     ...progress,
     streak: 0,
-    health: Math.max(0, progress.health - 4),
+    health: Math.max(0, progress.health - 2),
   };
 }
 
