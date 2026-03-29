@@ -440,49 +440,49 @@ export const reviewCards: ReviewCard[] = [
     front: "Which helper is the default in the passé composé?",
     back: "Avoir is the default helper for most verbs.",
     anchor: "Most verbs wear the avoir backpack.",
-    keywords: ["avoir", "most", "verbs"]
+    keywords: ["avoir", "default", "most", "verbs", "helper"]
   },
   {
     id: "r-etre-movers",
     front: "When should Mihika check for être?",
     back: "Check for movement or state-change verbs such as aller, arriver, entrer, partir, rentrer, tomber, venir, naître, mourir, rester, devenir.",
     anchor: "Movement often rides the être elevator.",
-    keywords: ["movement", "state", "etre"]
+    keywords: ["movement", "state", "change", "move", "etre", "aller"]
   },
   {
     id: "r-agreement",
     front: "What happens to the past participle after être?",
     back: "It agrees with the subject in gender and number: e for feminine, s for plural when needed.",
     anchor: "Être asks the ending to match the traveler.",
-    keywords: ["agree", "gender", "number"]
+    keywords: ["agree", "match", "gender", "number", "feminine", "plural"]
   },
   {
     id: "r-repair-check",
     front: "What are the three repair checks for a wrong passé composé sentence?",
     back: "Helper verb, past participle, agreement.",
     anchor: "Repair in three taps.",
-    keywords: ["helper", "participle", "agreement"]
+    keywords: ["helper", "participle", "agreement", "check", "verb"]
   },
   {
     id: "r-writing-check",
     front: "What is the writing checklist for Ma sortie récente?",
     back: "Where you went, with whom, what you did there, what you wore, what you ate and whether you liked it.",
     anchor: "Who, where, did, wore, ate.",
-    keywords: ["where", "with", "did", "wore", "ate"]
+    keywords: ["where", "who", "what", "wore", "ate", "did", "food"]
   },
   {
     id: "r-avoir-pattern",
     front: "What is the standard passé composé pattern with avoir?",
     back: "Subject + avoir in the present + past participle.",
     anchor: "Backpack helper first, action word second.",
-    keywords: ["subject", "avoir", "participle"]
+    keywords: ["subject", "avoir", "participle", "helper", "past"]
   },
   {
     id: "r-listening-elimination",
     front: "What should Mihika do first in a multiple-choice listening question?",
     back: "Scan the options before listening and identify the category differences such as place, drink, clothing, or action.",
     anchor: "See the battlefield before the audio starts.",
-    keywords: ["scan", "options", "category"]
+    keywords: ["scan", "look", "options", "before", "listen", "read"]
   }
 ];
 

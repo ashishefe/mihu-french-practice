@@ -55,9 +55,12 @@ export function containsKeywords(
   keywords: string[]
 ): boolean {
   const normalizedInput = normalizeText(input);
-  return keywords.every((keyword) =>
+  const matches = keywords.filter((keyword) =>
     normalizedInput.includes(normalizeText(keyword))
   );
+  // Pass if at least half the keywords are present (rounded up)
+  const threshold = Math.ceil(keywords.length / 2);
+  return matches.length >= threshold;
 }
 
 // ─── Date helpers ────────────────────────────────────────────
